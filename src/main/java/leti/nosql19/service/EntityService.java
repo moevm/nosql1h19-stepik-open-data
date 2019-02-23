@@ -10,8 +10,6 @@ public interface EntityService {
 
     List<Entity> findAll();
 
-    Entity findByFirstName(String firstName);
-
     List<Entity> findByLastName(String lastName);
 
 }

@@ -29,11 +29,6 @@ public class EntityServiceImpl implements EntityService {
     }
 
     @Override
-    public Entity findByFirstName(String firstName) {
-        return entityRepository.findByFirstName(firstName);
-    }
-
-    @Override
     public List<Entity> findByLastName(String lastName) {
         return entityRepository.findByLastName(lastName);
     }
