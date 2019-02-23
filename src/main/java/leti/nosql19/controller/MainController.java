@@ -22,10 +22,10 @@ public class MainController {
    // @ResponseBody
     public String getStartPage(Model model){
 
-        //entityService.add(new Entity("Ivan", "Ivanov"));
+        entityService.add(new Entity("Ivan", "Ivanov"));
 
         model.addAttribute("entity", entityService.findByLastName("Ivanov").get(0));
-        //model.addAttribute("d", "d");
+
         return "index";
     }
 }
