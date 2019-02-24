@@ -4,6 +4,7 @@
  
  -	JDK 1.8 or later
  -	Maven 3.2+
+ -  Tomcat 9
  -	MongoDB(installed and launched)
  
  
