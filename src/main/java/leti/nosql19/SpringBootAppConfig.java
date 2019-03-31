@@ -15,7 +15,6 @@ public class SpringBootAppConfig {
 
     public static void main(String[] args) {
         SpringApplication.run(SpringBootAppConfig.class, args);
-
     }
 
     @Bean

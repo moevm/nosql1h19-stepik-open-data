@@ -1,11 +1,8 @@
 package leti.nosql19.repository;
 
-import leti.nosql19.model.Entity;
+import leti.nosql19.model.Course;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import java.util.List;
+public interface EntityRepository extends MongoRepository<Course, String> {
 
-public interface EntityRepository extends MongoRepository<Entity, String> {
-
-    List<Entity> findByLastName(String lastName);
 }

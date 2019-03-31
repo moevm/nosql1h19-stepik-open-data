@@ -1,6 +1,6 @@
 package leti.nosql19.service;
 
-import leti.nosql19.model.Entity;
+import leti.nosql19.model.Course;
 import leti.nosql19.repository.EntityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,18 +18,28 @@ public class EntityServiceImpl implements EntityService {
     }
 
     @Override
-    public void add(Entity entity) {
+    public void add(Course entity) {
 
-        entityRepository.save(entity);
+        entityRepository.insert(entity);
     }
 
     @Override
-    public List<Entity> findAll() {
+    public List<Course> findAll() {
         return entityRepository.findAll();
     }
 
     @Override
-    public List<Entity> findByLastName(String lastName) {
-        return entityRepository.findByLastName(lastName);
+    public void delete(Course course) {
+        entityRepository.delete(course);
+    }
+
+    @Override
+    public void deleteById(String id) {
+        entityRepository.deleteById(id);
+    }
+
+    @Override
+    public void saveOrUpdate(Course course) {
+        entityRepository.save(course);
     }
 }

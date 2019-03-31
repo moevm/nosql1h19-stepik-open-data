@@ -1,15 +1,19 @@
 package leti.nosql19.service;
 
-import leti.nosql19.model.Entity;
+import leti.nosql19.model.Course;
 
 import java.util.List;
 
 public interface EntityService {
 
-    void add(Entity entity);
+    void add(Course entity);
 
-    List<Entity> findAll();
+    List<Course> findAll();
 
-    List<Entity> findByLastName(String lastName);
+    void delete(Course course);
+
+    void deleteById(String id);
+
+    void saveOrUpdate(Course course);
 
 }
