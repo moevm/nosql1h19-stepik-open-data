@@ -22,10 +22,13 @@ public class MainController {
     @GetMapping("/start")
     public String getStartPage(Model model){
 
-        entityService.saveOrUpdate(DataUtil.getCourseFromJson("/Users/sergeyzyl/IdeaProjects/stepik/src/main/resources/testcourse_course.json"));
+        //add data
+        //entityService.saveOrUpdate(DataUtil.getCourseFromJson("testcourse_course.json"));
+
         model.addAttribute("Jattempts", entityService.getAttempts("TestCourse"));
         model.addAttribute("Jcomments", entityService.getComments("TestCourse"));
         model.addAttribute("Jmodules", entityService.getModules("TestCourse"));
-        return "index";
+
+        return "PieChart";
     }
 }
