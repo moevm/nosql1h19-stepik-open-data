@@ -7,7 +7,7 @@
       "graduatedWithHonours": "3"
     },
     "modules": "11",
-    "steps": "172",
+    "steps": "29",
     "comments": "70"
   },
   "listOf": {
@@ -276,80 +276,80 @@
           "course": {
             "attempts": "147",
             "comments": "0",
-            "percent": "94.0",
+            "percent": "92.3",
             "stepsPassingCount": "168",
-            "successPassing": "true"
+            "successPassing": "false"
           },
           "modules": [
             {
-              "module": "General information",
-              "attempts": "5",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "module": "Introduction: Programs and Python",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "module": "Python interactive mode. Ipython",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "module": "Installing Python on a computer",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "module": "Integer operations",
-              "attempts": "3",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "module": "Transactions with real numbers",
-              "attempts": "5",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "module": "Data types",
+              "module": "Lesson11",
               "attempts": "6",
-              "comments": "0",
+              "comments": "4",
               "successPassing": "true"
             },
             {
-              "module": "Variables. Standard input / output",
+              "module": "Lesson12",
               "attempts": "5",
+              "comments": "2",
+              "successPassing": "true"
+            },
+            {
+              "module": "Lesson13",
+              "attempts": "2",
               "comments": "0",
               "successPassing": "true"
             },
             {
-              "module": "Logical operations, comparison operations",
+              "module": "Lesson14",
+              "attempts": "18",
+              "comments": "10",
+              "successPassing": "true"
+            },
+            {
+              "module": "Lesson15",
+              "attempts": "5",
+              "comments": "4",
+              "successPassing": "true"
+            },
+            {
+              "module": "Lesson16",
+              "attempts": "5",
+              "comments": "4",
+              "successPassing": "true"
+            },
+            {
+              "module": "Lesson21",
               "attempts": "3",
-              "comments": "0",
+              "comments": "1",
               "successPassing": "true"
             },
             {
-              "module": "Conditions: if, else, elif. Blocks, indents",
+              "module": "Lesson22",
               "attempts": "3",
+              "comments": "1",
+              "successPassing": "false"
+            },
+            {
+              "module": "Lesson23",
+              "attempts": "9",
+              "comments": "12",
+              "successPassing": "false"
+            },
+            {
+              "module": "Lesson24",
+              "attempts": "2",
               "comments": "0",
               "successPassing": "true"
             },
             {
-              "module": "Strings",
-              "attempts": "3",
+              "module": "Lesson31",
+              "attempts": "1",
               "comments": "0",
               "successPassing": "true"
             },
             {
-              "module": "Tasks for the materials of the week",
-              "attempts": "10",
+              "module": "Lesson32",
+              "attempts": "1",
               "comments": "0",
               "successPassing": "true"
             }
@@ -358,212 +358,80 @@
           "steps": [
             {
               "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "2",
+              "comments": "1",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "4",
+              "comments": "3",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "2",
+              "comments": "1",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "2",
+              "comments": "1",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
               "attempts": "3",
+              "comments": "3",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "5",
               "comments": "2",
               "successPassing": "true"
             },
             {
-              "step": "2",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
               "step": "3",
-              "attempts": "1",
-              "comments": "0",
+              "attempts": "2",
+              "comments": "1",
               "successPassing": "true"
             },
             {
               "step": "4",
-              "attempts": "1",
-              "comments": "0",
+              "attempts": "2",
+              "comments": "1",
               "successPassing": "true"
             },
             {
               "step": "5",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "6",
               "attempts": "4",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "7",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "8",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "5",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "6",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "5",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "6",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "7",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "8",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "9",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "10",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "5",
-              "attempts": "1",
-              "comments": "0",
+              "comments": "3",
               "successPassing": "true"
             },
             {
@@ -581,683 +449,59 @@
             {
               "step": "1",
               "attempts": "0",
-              "comments": "0",
+              "comments": "1",
               "successPassing": "true"
             },
             {
               "step": "2",
-              "attempts": "3",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "2",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "5",
-              "attempts": "0",
-              "comments": "0",
+              "attempts": "5",
+              "comments": "3",
               "successPassing": "true"
             },
             {
               "step": "1",
-              "attempts": "0",
+              "attempts": "2",
               "comments": "0",
               "successPassing": "true"
             },
             {
               "step": "2",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "5",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "6",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "7",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "8",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "5",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "6",
               "attempts": "2",
               "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "7",
-              "attempts": "2",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "8",
-              "attempts": "2",
-              "comments": "0",
-              "successPassing": "true"
+              "successPassing": "false"
             },
             {
               "step": "1",
               "attempts": "1",
-              "comments": "0",
+              "comments": "1",
               "successPassing": "true"
             },
             {
               "step": "2",
               "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "5",
-              "attempts": "2",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "6",
-              "attempts": "2",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "5",
-              "attempts": "2",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "3",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "2",
-              "comments": "0",
-              "successPassing": "true"
+              "comments": "1",
+              "successPassing": "false"
             },
             {
               "step": "3",
               "attempts": "1",
-              "comments": "0",
+              "comments": "1",
               "successPassing": "true"
             },
             {
               "step": "4",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "5",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "6",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "7",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
-              "attempts": "2",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "5",
-              "attempts": "2",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "6",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "7",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "8",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "9",
-              "attempts": "2",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "10",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "11",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "12",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
-              "attempts": "4",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "5",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "6",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "7",
-              "attempts": "3",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "3",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "5",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "6",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "7",
               "attempts": "6",
-              "comments": "0",
+              "comments": "6",
               "successPassing": "true"
             },
             {
               "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "5",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "6",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "7",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "8",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "9",
-              "attempts": "2",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "10",
-              "attempts": "2",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "11",
-              "attempts": "2",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "12",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "13",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "5",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "6",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "7",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "8",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "9",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "10",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "11",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "false"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "false"
-            },
-            {
-              "step": "3",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "5",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "6",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "7",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "8",
-              "attempts": "4",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "9",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "5",
-              "attempts": "9",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "6",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "7",
               "attempts": "2",
               "comments": "0",
               "successPassing": "true"
             },
             {
               "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
               "attempts": "1",
               "comments": "0",
               "successPassing": "true"
@@ -1270,121 +514,7 @@
             },
             {
               "step": "2",
-              "attempts": "3",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "4",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "9",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "3",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "false"
-            },
-            {
-              "step": "2",
               "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "false"
-            },
-            {
-              "step": "4",
-              "attempts": "1",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "5",
-              "attempts": "2",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "1",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "2",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "3",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "4",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "5",
-              "attempts": "0",
-              "comments": "0",
-              "successPassing": "true"
-            },
-            {
-              "step": "6",
-              "attempts": "0",
               "comments": "0",
               "successPassing": "true"
             }
