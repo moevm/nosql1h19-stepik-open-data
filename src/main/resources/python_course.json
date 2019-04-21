@@ -1,0 +1,2492 @@
+{
+  "courseName": "Programming on Python",
+  "countOf": {
+    "users": {
+      "all": "195220",
+      "graduated": "17702",
+      "graduatedWithHonours": "11"
+    },
+    "modules": "28",
+    "steps": "172",
+    "comments": "58669"
+  },
+  "listOf": {
+    "modules": [
+      {
+        "module": "General information",
+        "attempts": "194658",
+        "passing": "115901",
+        "comments": "37033",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "194658",
+            "passing": "115901",
+            "comments": "452"
+          },
+          {
+            "step": "2",
+            "attempts": "164658",
+            "passing": "115901",
+            "comments": "132"
+          },
+          {
+            "step": "3",
+            "attempts": "163567",
+            "passing": "140600",
+            "comments": "56"
+          },
+          {
+            "step": "4",
+            "attempts": "159000",
+            "passing": "159000",
+            "comments": "213"
+          },
+          {
+            "step": "5",
+            "attempts": "154855",
+            "passing": "154855",
+            "comments": "73"
+          },
+          {
+            "step": "6",
+            "attempts": "151657",
+            "passing": "115000",
+            "comments": "286"
+          },
+          {
+            "step": "7",
+            "attempts": "148427",
+            "passing": "148427",
+            "comments": "34546"
+          },
+          {
+            "step": "8",
+            "attempts": "127926",
+            "passing": "127926",
+            "comments": "12075"
+          }
+        ]
+      },
+      {
+        "module": "Introduction: Programs and Python",
+        "attempts": "154018",
+        "passing": "122086",
+        "comments": "1122",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "15418",
+            "passing": "15418",
+            "comments": "341"
+          },
+          {
+            "step": "2",
+            "attempts": "13528",
+            "passing": "13528",
+            "comments": "281"
+          },
+          {
+            "step": "3",
+            "attempts": "125476",
+            "passing": "125476",
+            "comments": "199"
+          },
+          {
+            "step": "4",
+            "attempts": "122176",
+            "passing": "122176",
+            "comments": "301"
+          }
+        ]
+      },
+      {
+        "module": "Python interactive mode. Ipython",
+        "attempts": "117049",
+        "passing": "88078",
+        "comments": "586",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "117049",
+            "passing": "117049",
+            "comments": "131"
+          },
+          {
+            "step": "2",
+            "attempts": "88078",
+            "passing": "88078",
+            "comments": "32"
+          },
+          {
+            "step": "3",
+            "attempts": "103736",
+            "passing": "103736",
+            "comments": "129"
+          },
+          {
+            "step": "4",
+            "attempts": "95519",
+            "passing": "95519",
+            "comments": "46"
+          },
+          {
+            "step": "5",
+            "attempts": "92402",
+            "passing": "92402",
+            "comments": "38"
+          },
+          {
+            "step": "6",
+            "attempts": "91612",
+            "passing": "91612",
+            "comments": "210"
+          }
+        ]
+      },
+      {
+        "module": "Installing Python on a computer",
+        "attempts": "10099",
+        "passing": "88216",
+        "comments": "522",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "10099",
+            "passing": "10099",
+            "comments": "317"
+          },
+          {
+            "step": "2",
+            "attempts": "88216",
+            "passing": "88216",
+            "comments": "205"
+          }
+        ]
+      },
+      {
+        "module": "Integer operations",
+        "attempts": "98682",
+        "passing": "69245",
+        "comments": "773",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "98682",
+            "passing": "98682",
+            "comments": "73"
+          },
+          {
+            "step": "2",
+            "attempts": "9165",
+            "passing": "9165",
+            "comments": "69"
+          },
+          {
+            "step": "3",
+            "attempts": "87398",
+            "passing": "75704",
+            "comments": "84"
+          },
+          {
+            "step": "4",
+            "attempts": "81699",
+            "passing": "81699",
+            "comments": "22"
+          },
+          {
+            "step": "5",
+            "attempts": "81358",
+            "passing": "69245",
+            "comments": "391"
+          },
+          {
+            "step": "6",
+            "attempts": "77308",
+            "passing": "77308",
+            "comments": "27"
+          },
+          {
+            "step": "7",
+            "attempts": "77411",
+            "passing": "70568",
+            "comments": "61"
+          },
+          {
+            "step": "8",
+            "attempts": "75195",
+            "passing": "75195",
+            "comments": "18"
+          },
+          {
+            "step": "9",
+            "attempts": "73788",
+            "passing": "73788",
+            "comments": "11"
+          },
+          {
+            "step": "10",
+            "attempts": "73910",
+            "passing": "72910",
+            "comments": "27"
+          }
+        ]
+      },
+      {
+        "module": "Transactions with real numbers",
+        "attempts": "78021",
+        "passing": "66073",
+        "comments": "266",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "78021",
+            "passing": "78021",
+            "comments": "54"
+          },
+          {
+            "step": "2",
+            "attempts": "73187",
+            "passing": "73187",
+            "comments": "56"
+          },
+          {
+            "step": "3",
+            "attempts": "71940",
+            "passing": "66868",
+            "comments": "73"
+          },
+          {
+            "step": "4",
+            "attempts": "77244",
+            "passing": "66354",
+            "comments": "23"
+          },
+          {
+            "step": "5",
+            "attempts": "69961",
+            "passing": "66073",
+            "comments": "34"
+          },
+          {
+            "step": "6",
+            "attempts": "69423",
+            "passing": "66248",
+            "comments": "23"
+          },
+          {
+            "step": "7",
+            "attempts": "69486",
+            "passing": "66427",
+            "comments": "20"
+          }
+        ]
+      },
+      {
+        "module": "Data types",
+        "attempts": "74490",
+        "passing": "64907",
+        "comments": "163",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "69486",
+            "passing": "66427",
+            "comments": "20"
+          },
+          {
+            "step": "2",
+            "attempts": "69297",
+            "passing": "66124",
+            "comments": "25"
+          },
+          {
+            "step": "3",
+            "attempts": "68285",
+            "passing": "65852",
+            "comments": "24"
+          },
+          {
+            "step": "4",
+            "attempts": "68100",
+            "passing": "64907",
+            "comments": "59"
+          },
+          {
+            "step": "5",
+            "attempts": "67656",
+            "passing": "67656",
+            "comments": "29"
+          }
+        ]
+      },
+      {
+        "module": "Variables. Standard input / output",
+        "attempts": "71868",
+        "passing": "54947",
+        "comments": "1389",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "69486",
+            "passing": "66427",
+            "comments": "20"
+          },
+          {
+            "step": "2",
+            "attempts": "65289",
+            "passing": "65289",
+            "comments": "17"
+          },
+          {
+            "step": "3",
+            "attempts": "64829",
+            "passing": "64829",
+            "comments": "19"
+          },
+          {
+            "step": "4",
+            "attempts": "68100",
+            "passing": "64907",
+            "comments": "59"
+          },
+          {
+            "step": "5",
+            "attempts": "64597",
+            "passing": "64597",
+            "comments": "104"
+          },
+          {
+            "step": "6",
+            "attempts": "66345",
+            "passing": "61135",
+            "comments": "111"
+          },
+          {
+            "step": "7",
+            "attempts": "64289",
+            "passing": "57315",
+            "comments": "516"
+          },
+          {
+            "step": "8",
+            "attempts": "62523",
+            "passing": "54947",
+            "comments": "539"
+          }
+        ]
+      },
+      {
+        "module": "Logical operations, comparison operations",
+        "attempts": "63493",
+        "passing": "53444",
+        "comments": "469",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "63493",
+            "passing": "63493",
+            "comments": "38"
+          },
+          {
+            "step": "2",
+            "attempts": "57283",
+            "passing": "57283",
+            "comments": "7"
+          },
+          {
+            "step": "3",
+            "attempts": "57171",
+            "passing": "57171",
+            "comments": "34"
+          },
+          {
+            "step": "4",
+            "attempts": "56771",
+            "passing": "56771",
+            "comments": "42"
+          },
+          {
+            "step": "5",
+            "attempts": "56193",
+            "passing": "56193",
+            "comments": "29"
+          },
+          {
+            "step": "6",
+            "attempts": "57726",
+            "passing": "53444",
+            "comments": "188"
+          },
+          {
+            "step": "7",
+            "attempts": "57726",
+            "passing": "53444",
+            "comments": "188"
+          },
+          {
+            "step": "8",
+            "attempts": "56193",
+            "passing": "53989",
+            "comments": "50"
+          }
+        ]
+      },
+      {
+        "module": "Conditions: if, else, elif. Blocks, indents",
+        "attempts": "61684",
+        "passing": "48929",
+        "comments": "971",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "61684",
+            "passing": "61684",
+            "comments": "29"
+          },
+          {
+            "step": "2",
+            "attempts": "55266",
+            "passing": "55266",
+            "comments": "36"
+          },
+          {
+            "step": "3",
+            "attempts": "54648",
+            "passing": "54648",
+            "comments": "14"
+          },
+          {
+            "step": "4",
+            "attempts": "54772",
+            "passing": "54772",
+            "comments": "48"
+          },
+          {
+            "step": "5",
+            "attempts": "56895",
+            "passing": "49782",
+            "comments": "495"
+          },
+          {
+            "step": "6",
+            "attempts": "54368",
+            "passing": "48929",
+            "comments": "349"
+          }
+        ]
+      },
+      {
+        "module": "Strings",
+        "attempts": "57160",
+        "passing": "49698",
+        "comments": "264",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "57192",
+            "passing": "57192",
+            "comments": "65"
+          },
+          {
+            "step": "2",
+            "attempts": "52487",
+            "passing": "50246",
+            "comments": "52"
+          },
+          {
+            "step": "3",
+            "attempts": "51599",
+            "passing": "51599",
+            "comments": "13"
+          },
+          {
+            "step": "4",
+            "attempts": "51057",
+            "passing": "51057",
+            "comments": "26"
+          },
+          {
+            "step": "5",
+            "attempts": "56895",
+            "passing": "49882",
+            "comments": "495"
+          }
+        ]
+      },
+      {
+        "module": "Tasks for the materials of the week",
+        "attempts": "58924",
+        "passing": "38321",
+        "comments": "4209",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "58924",
+            "passing": "48153",
+            "comments": "293"
+          },
+          {
+            "step": "2",
+            "attempts": "52892",
+            "passing": "46510",
+            "comments": "341"
+          },
+          {
+            "step": "3",
+            "attempts": "52143",
+            "passing": "43620",
+            "comments": "975"
+          },
+          {
+            "step": "4",
+            "attempts": "50202",
+            "passing": "43479",
+            "comments": "403"
+          },
+          {
+            "step": "5",
+            "attempts": "49937",
+            "passing": "41551",
+            "comments": "670"
+          },
+          {
+            "step": "6",
+            "attempts": "48764",
+            "passing": "38321",
+            "comments": "1168"
+          },
+          {
+            "step": "7",
+            "attempts": "47540",
+            "passing": "39929",
+            "comments": "359"
+          }
+        ]
+      },
+      {
+        "module": "While loop",
+        "attempts": "56224",
+        "passing": "37809",
+        "comments": "950",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "50224",
+            "passing": "50224",
+            "comments": "8"
+          },
+          {
+            "step": "2",
+            "attempts": "46772",
+            "passing": "46772",
+            "comments": "46"
+          },
+          {
+            "step": "3",
+            "attempts": "44264",
+            "passing": "44264",
+            "comments": "29"
+          },
+          {
+            "step": "4",
+            "attempts": "45212",
+            "passing": "43005",
+            "comments": "47"
+          },
+          {
+            "step": "5",
+            "attempts": "44594",
+            "passing": "42533",
+            "comments": "42"
+          },
+          {
+            "step": "6",
+            "attempts": "43656",
+            "passing": "43656",
+            "comments": "9"
+          },
+          {
+            "step": "7",
+            "attempts": "43420",
+            "passing": "43420",
+            "comments": "43"
+          },
+          {
+            "step": "8",
+            "attempts": "42802",
+            "passing": "42802",
+            "comments": "13"
+          },
+          {
+            "step": "9",
+            "attempts": "44011",
+            "passing": "41879",
+            "comments": "46"
+          },
+          {
+            "step": "10",
+            "attempts": "43122",
+            "passing": "43122",
+            "comments": "62"
+          },
+          {
+            "step": "11",
+            "attempts": "44370",
+            "passing": "39877",
+            "comments": "257"
+          },
+          {
+            "step": "12",
+            "attempts": "43725",
+            "passing": "37809",
+            "comments": "348"
+          }
+        ]
+      },
+      {
+        "module": "Operators break, continue",
+        "attempts": "44223",
+        "passing": "37087",
+        "comments": "454",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "44223",
+            "passing": "44223",
+            "comments": "72"
+          },
+          {
+            "step": "2",
+            "attempts": "41136",
+            "passing": "39135",
+            "comments": "37"
+          },
+          {
+            "step": "3",
+            "attempts": "40605",
+            "passing": "38968",
+            "comments": "17"
+          },
+          {
+            "step": "4",
+            "attempts": "41375",
+            "passing": "37087",
+            "comments": "328"
+          }
+        ]
+      },
+      {
+        "module": "For loop",
+        "attempts": "43940",
+        "passing": "33191",
+        "comments": "1100",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "43940",
+            "passing": "43940",
+            "comments": "42"
+          },
+          {
+            "step": "2",
+            "attempts": "39874",
+            "passing": "39874",
+            "comments": "36"
+          },
+          {
+            "step": "3",
+            "attempts": "41761",
+            "passing": "33891",
+            "comments": "657"
+          },
+          {
+            "step": "4",
+            "attempts": "37710",
+            "passing": "37710",
+            "comments": "36"
+          },
+          {
+            "step": "5",
+            "attempts": "36564",
+            "passing": "36564",
+            "comments": "19"
+          },
+          {
+            "step": "6",
+            "attempts": "36375",
+            "passing": "36375",
+            "comments": "45"
+          },
+          {
+            "step": "7",
+            "attempts": "38115",
+            "passing": "34015",
+            "comments": "265"
+          }
+        ]
+      },
+      {
+        "module": "Strings and characters",
+        "attempts": "41061",
+        "passing": "29961",
+        "comments": "1157",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "41061",
+            "passing": "41061",
+            "comments": "35"
+          },
+          {
+            "step": "2",
+            "attempts": "36636",
+            "passing": "36636",
+            "comments": "32"
+          },
+          {
+            "step": "3",
+            "attempts": "37335",
+            "passing": "33793",
+            "comments": "169"
+          },
+          {
+            "step": "4",
+            "attempts": "36094",
+            "passing": "36094",
+            "comments": "141"
+          },
+          {
+            "step": "5",
+            "attempts": "36130",
+            "passing": "33133",
+            "comments": "55"
+          },
+          {
+            "step": "6",
+            "attempts": "35359",
+            "passing": "35359",
+            "comments": "31"
+          },
+          {
+            "step": "7",
+            "attempts": "37365",
+            "passing": "29961",
+            "comments": "694"
+          }
+        ]
+      },
+      {
+        "module": "Lists",
+        "attempts": "39476",
+        "passing": "27429",
+        "comments": "1227",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "39476",
+            "passing": "39476",
+            "comments": "15"
+          },
+          {
+            "step": "2",
+            "attempts": "34362",
+            "passing": "34627",
+            "comments": "7"
+          },
+          {
+            "step": "3",
+            "attempts": "34995",
+            "passing": "32643",
+            "comments": "80"
+          },
+          {
+            "step": "4",
+            "attempts": "33950",
+            "passing": "33950",
+            "comments": "23"
+          },
+          {
+            "step": "5",
+            "attempts": "33423",
+            "passing": "33423",
+            "comments": "26"
+          },
+          {
+            "step": "6",
+            "attempts": "33189",
+            "passing": "33189",
+            "comments": "15"
+          },
+          {
+            "step": "7",
+            "attempts": "33818",
+            "passing": "31153",
+            "comments": "74"
+          },
+          {
+            "step": "8",
+            "attempts": "33203",
+            "passing": "33203",
+            "comments": "22"
+          },
+          {
+            "step": "9",
+            "attempts": "33881",
+            "passing": "30742",
+            "comments": "94"
+          },
+          {
+            "step": "10",
+            "attempts": "33510",
+            "passing": "28450",
+            "comments": "420"
+          },
+          {
+            "step": "11",
+            "attempts": "32861",
+            "passing": "27429",
+            "comments": "411"
+          },
+          {
+            "step": "12",
+            "attempts": "31116",
+            "passing": "31316",
+            "comments": "11"
+          },
+          {
+            "step": "13",
+            "attempts": "30710",
+            "passing": "30710",
+            "comments": "29"
+          }
+        ]
+      },
+      {
+        "module": "Tasks for the materials of the week (module2)",
+        "attempts": "36558",
+        "passing": "16990",
+        "comments": "1843",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "36558",
+            "passing": "36558",
+            "comments": "25"
+          },
+          {
+            "step": "2",
+            "attempts": "30750",
+            "passing": "30750",
+            "comments": "14"
+          },
+          {
+            "step": "3",
+            "attempts": "30257",
+            "passing": "30257",
+            "comments": "18"
+          },
+          {
+            "step": "4",
+            "attempts": "29665",
+            "passing": "29665",
+            "comments": "25"
+          },
+          {
+            "step": "5",
+            "attempts": "29440",
+            "passing": "29440",
+            "comments": "15"
+          },
+          {
+            "step": "6",
+            "attempts": "29379",
+            "passing": "29379",
+            "comments": "108"
+          },
+          {
+            "step": "7",
+            "attempts": "32249",
+            "passing": "26434",
+            "comments": "210"
+          },
+          {
+            "step": "8",
+            "attempts": "30455",
+            "passing": "25284",
+            "comments": "318"
+          },
+          {
+            "step": "9",
+            "attempts": "29486",
+            "passing": "25026",
+            "comments": "159"
+          },
+          {
+            "step": "10",
+            "attempts": "29914",
+            "passing": "29121",
+            "comments": "593"
+          },
+          {
+            "step": "11",
+            "attempts": "29340",
+            "passing": "16990",
+            "comments": "348"
+          }
+        ]
+      },
+      {
+        "module": "Functions",
+        "attempts": "33189",
+        "passing": "321617",
+        "comments": "669",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "33189",
+            "passing": "33189",
+            "comments": "13"
+          },
+          {
+            "step": "2",
+            "attempts": "29376",
+            "passing": "29376",
+            "comments": "24"
+          },
+          {
+            "step": "3",
+            "attempts": "28425",
+            "passing": "25512",
+            "comments": "31"
+          },
+          {
+            "step": "4",
+            "attempts": "27494",
+            "passing": "27494",
+            "comments": "30"
+          },
+          {
+            "step": "5",
+            "attempts": "26392",
+            "passing": "26392",
+            "comments": "7"
+          },
+          {
+            "step": "6",
+            "attempts": "26137",
+            "passing": "26137",
+            "comments": "21"
+          },
+          {
+            "step": "7",
+            "attempts": "25914",
+            "passing": "25914",
+            "comments": "6"
+          },
+          {
+            "step": "8",
+            "attempts": "27371",
+            "passing": "23538",
+            "comments": "140"
+          },
+          {
+            "step": "9",
+            "attempts": "26843",
+            "passing": "21617",
+            "comments": "397"
+          }
+        ]
+      },
+      {
+        "module": "Dictionaries",
+        "attempts": "29473",
+        "passing": "18959",
+        "comments": "744",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "29473",
+            "passing": "29473",
+            "comments": "23"
+          },
+          {
+            "step": "2",
+            "attempts": "25180",
+            "passing": "25180",
+            "comments": "21"
+          },
+          {
+            "step": "3",
+            "attempts": "24549",
+            "passing": "24549",
+            "comments": "15"
+          },
+          {
+            "step": "4",
+            "attempts": "24351",
+            "passing": "24351",
+            "comments": "19"
+          },
+          {
+            "step": "5",
+            "attempts": "25702",
+            "passing": "20534",
+            "comments": "258"
+          },
+          {
+            "step": "6",
+            "attempts": "23877",
+            "passing": "20283",
+            "comments": "124"
+          },
+          {
+            "step": "7",
+            "attempts": "23609",
+            "passing": "18959",
+            "comments": "284"
+          }
+        ]
+      },
+      {
+        "module": "Interpreter: installation, script launch",
+        "attempts": "26657",
+        "passing": "26657",
+        "comments": "72",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "26657",
+            "passing": "26657",
+            "comments": "72"
+          }
+        ]
+      },
+      {
+        "module": "File Input/Output",
+        "attempts": "27761",
+        "passing": "13299",
+        "comments": "671",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "27761",
+            "passing": "27761",
+            "comments": "37"
+          },
+          {
+            "step": "2",
+            "attempts": "24972",
+            "passing": "15968",
+            "comments": "264"
+          },
+          {
+            "step": "3",
+            "attempts": "22384",
+            "passing": "14251",
+            "comments": "171"
+          },
+          {
+            "step": "4",
+            "attempts": "21269",
+            "passing": "13299",
+            "comments": "199"
+          }
+        ]
+      },
+      {
+        "module": "Modules, connecting modules",
+        "attempts": "25042",
+        "passing": "16315",
+        "comments": "160",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "25042",
+            "passing": "25042",
+            "comments": "18"
+          },
+          {
+            "step": "2",
+            "attempts": "24972",
+            "passing": "15698",
+            "comments": "264"
+          },
+          {
+            "step": "3",
+            "attempts": "20292",
+            "passing": "16315",
+            "comments": "82"
+          }
+        ]
+      },
+      {
+        "module": "Installation of additional modules",
+        "attempts": "24021",
+        "passing": "11267",
+        "comments": "487",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "24021",
+            "passing": "24021",
+            "comments": "71"
+          },
+          {
+            "step": "2",
+            "attempts": "20121",
+            "passing": "12147",
+            "comments": "120"
+          },
+          {
+            "step": "3",
+            "attempts": "18277",
+            "passing": "11267",
+            "comments": "296"
+          }
+        ]
+      },
+      {
+        "module": "Tasks for the materials of the week (module 3)",
+        "attempts": "24021",
+        "passing": "11267",
+        "comments": "487",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "24021",
+            "passing": "24021",
+            "comments": "71"
+          },
+          {
+            "step": "2",
+            "attempts": "20121",
+            "passing": "12147",
+            "comments": "120"
+          },
+          {
+            "step": "3",
+            "attempts": "18277",
+            "passing": "11267",
+            "comments": "50"
+          },
+          {
+            "step": "4",
+            "attempts": "11144",
+            "passing": "10678",
+            "comments": "158"
+          },
+          {
+            "step": "5",
+            "attempts": "10234",
+            "passing": "9789",
+            "comments": "177"
+          }
+        ]
+      },
+      {
+        "module": "Libraries for data analysis. Numpy",
+        "attempts": "23191",
+        "passing": "18118",
+        "comments": "26",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "23191",
+            "passing": "23191",
+            "comments": "17"
+          },
+          {
+            "step": "2",
+            "attempts": "18118",
+            "passing": "18118",
+            "comments": "9"
+          }
+        ]
+      },
+      {
+        "module": "Matplotlib library",
+        "attempts": "21888",
+        "passing": "16115",
+        "comments": "36",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "21888",
+            "passing": "21888",
+            "comments": "19"
+          },
+          {
+            "step": "2",
+            "attempts": "16115",
+            "passing": "16115",
+            "comments": "17"
+          }
+        ]
+      },
+      {
+        "module": "Conclusion",
+        "attempts": "22972",
+        "passing": "8673",
+        "comments": "649",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "21888",
+            "passing": "21888",
+            "comments": "19"
+          },
+          {
+            "step": "2",
+            "attempts": "18430",
+            "passing": "18430",
+            "comments": "71"
+          },
+          {
+            "step": "3",
+            "attempts": "16951",
+            "passing": "16951",
+            "comments": "45"
+          },
+          {
+            "step": "4",
+            "attempts": "17055",
+            "passing": "17055",
+            "comments": "25"
+          },
+          {
+            "step": "5",
+            "attempts": "8673",
+            "passing": "8673",
+            "comments": "53"
+          },
+          {
+            "step": "6",
+            "attempts": "16786",
+            "passing": "16786",
+            "comments": "356"
+          }
+        ]
+      }
+    ],
+    "users": [
+      {
+        "user": "Sergey Zyl",
+        "progressBy": {
+          "course": {
+            "attempts": "147",
+            "comments": "0",
+            "percent": "94.0",
+            "stepsPassingCount": "168",
+            "successPassing": "true"
+          },
+          "modules": [
+            {
+              "module": "General information",
+              "attempts": "5",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Introduction: Programs and Python",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Python interactive mode. Ipython",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Installing Python on a computer",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Integer operations",
+              "attempts": "3",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Transactions with real numbers",
+              "attempts": "5",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Data types",
+              "attempts": "6",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Variables. Standard input / output",
+              "attempts": "5",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Logical operations, comparison operations",
+              "attempts": "3",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Conditions: if, else, elif. Blocks, indents",
+              "attempts": "3",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Strings",
+              "attempts": "3",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Tasks for the materials of the week",
+              "attempts": "10",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "While loop",
+              "attempts": "8",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Operators break, continue",
+              "attempts": "6",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "For loop",
+              "attempts": "4",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Strings and characters",
+              "attempts": "20",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Lists",
+              "attempts": "8",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Tasks for the materials of the week (module2)",
+              "attempts": "4",
+              "comments": "0",
+              "successPassing": "false"
+            },
+            {
+              "module": "Functions",
+              "attempts": "6",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Dictionaries",
+              "attempts": "12",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Interpreter: installation, script launch",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "File Input/Output",
+              "attempts": "3",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Modules, connecting modules",
+              "attempts": "7",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Installation of additional modules",
+              "attempts": "12",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Tasks for the materials of the week (module 3)",
+              "attempts": "5",
+              "comments": "0",
+              "successPassing": "false"
+            },
+            {
+              "module": "Libraries for data analysis. Numpy",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Matplotlib library",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "module": "Conclusion",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            }
+          ],
+
+          "steps": [
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "6",
+              "attempts": "4",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "7",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "8",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "6",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "6",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "7",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "8",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "9",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "10",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "6",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "7",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "3",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "2",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "6",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "7",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "8",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "6",
+              "attempts": "2",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "7",
+              "attempts": "2",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "8",
+              "attempts": "2",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "2",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "6",
+              "attempts": "2",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "2",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "3",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "2",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "6",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "7",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "2",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "2",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "6",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "7",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "8",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "9",
+              "attempts": "2",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "10",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "11",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "12",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "4",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "6",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "7",
+              "attempts": "3",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "3",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "6",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "7",
+              "attempts": "6",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "6",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "7",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "8",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "9",
+              "attempts": "2",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "10",
+              "attempts": "2",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "11",
+              "attempts": "2",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "12",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "13",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "6",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "7",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "8",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "9",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "10",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "11",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "false"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "false"
+            },
+            {
+              "step": "3",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "6",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "7",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "8",
+              "attempts": "4",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "9",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "9",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "6",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "7",
+              "attempts": "2",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "3",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "4",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "9",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "3",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "false"
+            },
+            {
+              "step": "2",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "false"
+            },
+            {
+              "step": "4",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "2",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "6",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

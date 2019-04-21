@@ -3,7 +3,7 @@
 
 <html>
 <body>
-<h2>Hello ${entity.toString()}</h2>
+<h2>Hello ${response}</h2>
 
 </body>
 </html>

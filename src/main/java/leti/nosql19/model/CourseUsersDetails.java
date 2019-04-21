@@ -9,11 +9,11 @@ public class CourseUsersDetails {
 
     private int graduated;
 
-    private int graduatedWirthHonours;
+    private int graduatedWithHonours;
 
-    public CourseUsersDetails(int all, int graduated, int graduatedWirthHonours) {
+    public CourseUsersDetails(int all, int graduated, int graduatedWithHonours) {
         this.all = all;
         this.graduated = graduated;
-        this.graduatedWirthHonours = graduatedWirthHonours;
+        this.graduatedWithHonours = graduatedWithHonours;
     }
 }
