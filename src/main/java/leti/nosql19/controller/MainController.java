@@ -1,5 +1,6 @@
 package leti.nosql19.controller;
 
+import com.google.gson.Gson;
 import leti.nosql19.service.EntityService;
 import leti.nosql19.utils.DataUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +21,11 @@ public class MainController {
 
     @GetMapping("/start")
     public String getStartPage(Model model){
-        entityService.saveOrUpdate(DataUtil.getCourseFromJson("/Users/sergeyzyl/IdeaProjects/stepik/src/main/resources/python_course.json"));
-        model.addAttribute("response", entityService.findAll().get(0).getListOf().getUsers().get(0).getUser());
+
+        entityService.saveOrUpdate(DataUtil.getCourseFromJson("/Users/sergeyzyl/IdeaProjects/stepik/src/main/resources/testcourse_course.json"));
+        model.addAttribute("Jattempts", entityService.getAttempts("TestCourse"));
+        model.addAttribute("Jcomments", entityService.getComments("TestCourse"));
+        model.addAttribute("Jmodules", entityService.getModules("TestCourse"));
         return "index";
     }
 }

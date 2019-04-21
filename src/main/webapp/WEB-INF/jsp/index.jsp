@@ -13,44 +13,72 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+        google.charts.setOnLoadCallback(drawAnnotations);
 
-        // Load the Visualization API and the corechart package.
-        google.charts.load('current', {'packages':['corechart']});
-
-        // Set a callback to run when the Google Visualization API is loaded.
-        google.charts.setOnLoadCallback(drawChart);
-
-        // Callback that creates and populates a data table,
-        // instantiates the pie chart, passes in the data and
-        // draws it.
-        function drawChart() {
-
-            // Create the data table.
+        function drawAnnotations() {
             var data = new google.visualization.DataTable();
-            data.addColumn('string', 'Topping');
-            data.addColumn('number', 'Slices');
-            data.addRows([
-                ['Mushrooms', 3],
-                ['Onions', 1],
-                ['Olives', 1],
-                ['Zucchini', 1],
-                ['Pepperoni', 2]
-            ]);
+            data.addColumn('timeofday', 'Time of Day');
+            data.addColumn('number', 'Comments');
+            data.addColumn({type: 'string', role: 'annotation'});
+            data.addColumn('number', 'Attempts');
+            data.addColumn({type: 'string', role: 'annotation'});
 
-            // Set chart options
-            var options = {'title':'How Much Pizza I Ate Last Night',
-                'width':400,
-                'height':300};
 
-            // Instantiate and draw our chart, passing in some options.
-            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+
+            var comments = [
+                <c:forEach items="${Jcomments}" var="hero">
+                '<c:out value="${hero}" />',
+                </c:forEach>
+            ];
+
+
+            var attempts = [
+                <c:forEach items="${Jattempts}" var="hero">
+                '<c:out value="${hero}" />',
+                </c:forEach>
+            ];
+
+            var modules = [
+                <c:forEach items="${Jmodules}" var="hero">
+                '<c:out value="${hero}" />',
+                </c:forEach>
+            ];
+            var size = comments.length
+            for (var i = 0; i < size; i++) {
+                data.addRows([
+                    [{v: [10 + i, 0, 0], f: modules[i]}, parseInt(comments[i]), comments[i], parseInt(attempts[i]),  attempts[i]],
+                ]);
+            }
+
+            var options = {
+                title: 'Statistics of attempts and comments in lessons ',
+                annotations: {
+                    alwaysOutside: true,
+                    textStyle: {
+                        fontSize: 14,
+                        color: '#000',
+                        auraColor: 'none'
+                    }
+                },
+                hAxis: {
+                    title: 'Modules'
+                },
+                vAxis: {
+                    title: 'Comments and attempts'
+                }
+            };
+
+            var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
             chart.draw(data, options);
         }
     </script>
 </head>
 <body>
-<jsp:include page="navbar.jsp"/>
-<h2>Hello ${response}</h2>
+<h2>Hello </h2>
 <div id="chart_div"></div>
+<div>
+    ${comments}
+</div>
 </body>
 </html>
