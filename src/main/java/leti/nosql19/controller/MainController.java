@@ -23,12 +23,16 @@ public class MainController {
     public String getStartPage(Model model){
 
         //add data
-        //entityService.saveOrUpdate(DataUtil.getCourseFromJson("testcourse_course.json"));
+        entityService.saveOrUpdate(DataUtil.getCourseFromJson("C:\\Users\\Admin\\Desktop\\3 kurs\\nosql\\nosql1h19-stepik-open-data\\src\\main\\resources\\testcourse_course.json"));
 
         model.addAttribute("Jattempts", entityService.getAttempts("TestCourse"));
         model.addAttribute("Jcomments", entityService.getComments("TestCourse"));
         model.addAttribute("Jmodules", entityService.getModules("TestCourse"));
 
-        return "PieChart";
+        model.addAttribute("python_attempts", entityService.getAttempts("Programming on Python"));
+        model.addAttribute("python_comments", entityService.getComments("Programming on Python"));
+        model.addAttribute("python_modules", entityService.getModules("Programming on Python"));
+
+        return "index";
     }
 }
