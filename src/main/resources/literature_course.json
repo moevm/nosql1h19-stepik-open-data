@@ -1,0 +1,248 @@
+{
+  "courseName": "Literature",
+  "countOf": {
+    "users": {
+      "all": "6",
+      "graduated": "5",
+      "graduatedWithHonours": "5"
+    },
+    "modules": "4",
+    "steps": "13",
+    "comments": "25"
+  },
+  "listOf": {
+    "modules": [
+      {
+        "module": "Les11",
+        "attempts": "41",
+        "passing": "6",
+        "comments": "14",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "6",
+            "passing": "6",
+            "comments": "2"
+          },
+          {
+            "step": "2",
+            "attempts": "8",
+            "passing": "6",
+            "comments": "2"
+          },
+          {
+            "step": "3",
+            "attempts": "9",
+            "passing": "6",
+            "comments": "0"
+          },
+          {
+            "step": "4",
+            "attempts": "11",
+            "passing": "6",
+            "comments": "6"
+          },
+          {
+            "step": "5",
+            "attempts": "8",
+            "passing": "6",
+            "comments": "3"
+          }
+        ]
+      },
+      {
+        "module": "Les12",
+        "attempts": "29",
+        "passing": "6",
+        "comments": "6",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "7",
+            "passing": "6",
+            "comments": "0"
+          },
+          {
+            "step": "2",
+            "attempts": "7",
+            "passing": "6",
+            "comments": "1"
+          },
+          {
+            "step": "3",
+            "attempts": "8",
+            "passing": "6",
+            "comments": "5"
+          }
+        ]
+      },
+      {
+        "module": "Les21",
+        "attempts": "32",
+        "passing": "5",
+        "comments": "4",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "7",
+            "passing": "6",
+            "comments": "0"
+          },
+          {
+            "step": "2",
+            "attempts": "9",
+            "passing": "5",
+            "comments": "2"
+          },
+          {
+            "step": "3",
+            "attempts": "8",
+            "passing": "6",
+            "comments": "2"
+          }
+        ]
+      },
+      {
+        "module": "Les22",
+        "attempts": "12",
+        "passing": "6",
+        "comments": "2",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "6",
+            "passing": "6",
+            "comments": "1"
+          },
+          {
+            "step": "2",
+            "attempts": "6",
+            "passing": "6",
+            "comments": "1"
+          }
+        ]
+      }
+    ],
+    "users": [
+      {
+        "user": "Sergey Zyl",
+        "progressBy": {
+          "course": {
+            "attempts": "28",
+            "comments": "25",
+            "percent": "87.7",
+            "stepsPassingCount": "12",
+            "successPassing": "false"
+          },
+          "modules": [
+            {
+              "module": "Les11",
+              "attempts": "15",
+              "comments": "14",
+              "successPassing": "true"
+            },
+            {
+              "module": "Les12",
+              "attempts": "4",
+              "comments": "6",
+              "successPassing": "true"
+            },
+            {
+              "module": "Les21",
+              "attempts": "7",
+              "comments": "4",
+              "successPassing": "false"
+            },
+            {
+              "module": "Les22",
+              "attempts": "2",
+              "comments": "1",
+              "successPassing": "true"
+            }
+          ],
+
+          "steps": [
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "2",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "3",
+              "comments": "3",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "3",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "4",
+              "attempts": "6",
+              "comments": "6",
+              "successPassing": "true"
+            },
+            {
+              "step": "5",
+              "attempts": "3",
+              "comments": "3",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "1",
+              "comments": "1",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "2",
+              "comments": "5",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "2",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "3",
+              "comments": "2",
+              "successPassing": "false"
+            },
+            {
+              "step": "3",
+              "attempts": "2",
+              "comments": "2",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "1",
+              "comments": "1",
+              "successPassing": "true"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

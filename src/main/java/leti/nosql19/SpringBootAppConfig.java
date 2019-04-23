@@ -27,9 +27,4 @@ public class SpringBootAppConfig {
 
         return resolver;
     }
-
-    @Bean
-    RestOperations rest(RestTemplateBuilder restTemplateBuilder) {
-       return restTemplateBuilder.basicAuthorization("sergzyl99@gmail.com", "qazwsxedc1").build();
-    }
 }

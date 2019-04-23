@@ -1,17 +1,10 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-
 <html>
 <head>
-    <link href="<c:url value="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"/>" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <jsp:include page="layout.jsp"/>
+    <title>Statistics</title>
     <script type="text/javascript">
         google.charts.load('current', {packages: ['corechart', 'bar']});
         google.charts.setOnLoadCallback(drawChart1);
@@ -229,12 +222,10 @@
     </script>
 </head>
 <body>
-<div id="chart_div"></div>>
-<div></div>>
+<jsp:include page="navbar.jsp"/>
+<div id="chart_div"></div>
 <div id="chart2_div"></div>
-<div></div>
 <div id="curve_chart"></div>
-<div></div>
 <div id="myPieChart"></div>
 </body>
 </html>
