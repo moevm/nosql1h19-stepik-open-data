@@ -1,7 +1,6 @@
 package leti.nosql19.service;
 
-import leti.nosql19.model.Course;
-import leti.nosql19.model.Module;
+import leti.nosql19.model.*;
 import leti.nosql19.repository.EntityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -85,6 +84,77 @@ public class EntityServiceImpl implements EntityService {
 
         for (Module model: course.getListOf().getModules()) {
             result.add(model.getAttempts());
+        }
+
+        return result;
+    }
+
+
+    @Override
+    public User getUserByName(String userName, String courseName) {
+        Course course = findById(courseName);
+
+        User user = null;
+
+        for (User user1 : course.getListOf().getUsers()) {
+            if(user1.getUser().equals(userName))
+                user = user1;
+        }
+
+        return User
+    }
+
+    @Override
+    public List<Integer> getUserModuleAttempts(String userName, String courseName) {
+        User user = getUserByName(userName, courseName);
+        if(user == null)
+            return null;
+        List<Integer> result = new ArrayList<>();
+
+        for (UserModule module : user.getProgressBy().getModules()) {
+            result.add(module.getAttempts());
+        }
+
+        return result;
+    }
+
+    @Override
+    public List<Integer> getUserModuleComments(String userName, String courseName) {
+        User user = getUserByName(userName, courseName);
+        if(user == null)
+            return null;
+        List<Integer> result = new ArrayList<>();
+
+        for (UserModule module : user.getProgressBy().getModules()) {
+            result.add(module.getComments());
+        }
+
+        return result;
+    }
+
+    @Override
+    public List<Integer> getUserStepAttempts(String userName, String courseName) {
+        User user = getUserByName(userName, courseName);
+        if(user == null)
+            return null;
+        List<Integer> result = new ArrayList<>();
+
+        for (UserStep step : user.getProgressBy().getSteps()) {
+            result.add(step.getAttempts());
+        }
+
+        return result;
+    }
+
+    @Override
+    public List<Integer> getUserStepComments(String userName, String courseName) {
+        User user = getUserByName(userName, courseName);
+        if(user == null)
+            return null;
+        List<Integer> result = new ArrayList<>();
+
+        for (UserStep step : user.getProgressBy().getSteps()) {
+            result.add(step.getComments());
         }
 
         return result;

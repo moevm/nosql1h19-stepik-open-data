@@ -1,6 +1,7 @@
 package leti.nosql19.service;
 
 import leti.nosql19.model.Course;
+import leti.nosql19.model.User;
 
 import java.util.List;
 
@@ -23,4 +24,14 @@ public interface EntityService {
     List<Integer> getComments(String id);
 
     List<Integer> getAttempts(String id);
+
+    User getUserByName(String userName, String courseName);
+
+    List<Integer> getUserModuleAttempts(String userName, String courseName);
+
+    List<Integer> getUserModuleComments(String userName, String courseName);
+
+    List<Integer> getUserStepAttempts(String userName, String courseName);
+
+    List<Integer> getUserStepComments(String userName, String courseName);
 }
