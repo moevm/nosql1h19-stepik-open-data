@@ -1,10 +1,12 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
 <html>
 <head>
     <jsp:include page="layout.jsp"/>
     <title>Statistics</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         google.charts.load('current', {packages: ['corechart', 'bar']});
         google.charts.setOnLoadCallback(drawChart1);
@@ -62,7 +64,7 @@
                 }
             };
 
-            var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+            var chart = new google.visualization.LineChart(document.getElementById('chart_test'));
             chart.draw(data, options);
         }
 
@@ -128,7 +130,7 @@
                 width:1400,
             };
 
-            var chart = new google.visualization.ColumnChart(document.getElementById('chart2_div'));
+            var chart = new google.visualization.ColumnChart(document.getElementById('chart_python'));
             chart.draw(data, options);
         }
         function drawChart3() {
@@ -167,7 +169,7 @@
                 ]);
             }
 
-            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+            var chart = new google.visualization.LineChart(document.getElementById('curve_test'));
 
             chart.draw(data, options);
         }
@@ -216,16 +218,51 @@
             };
 
             // Instantiate and draw the chart.
-            var chart = new google.visualization.PieChart(document.getElementById('myPieChart'));
+            var chart = new google.visualization.PieChart(document.getElementById('chart2_test'));
             chart.draw(data, options);
         }
+
+        function changeGraphics(){
+            var selectBox = document.getElementById("selectBox");
+            var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+            alert(selectedValue);
+
+            $(document).ready(function(){
+                if(selectedValue == "TestCourse"){
+                        $("#chart_python").hide();
+                        $("#chart_test").show();
+                        $("#curve_test").show();
+                        $("#chart2_test").show();
+                }
+                if (selectedValue == "Programming"){
+                        $("#chart_test").hide();
+                        $("#chart2_test").hide();
+                        $("#curve_test").hide();
+                        $("#chart_python").show();
+                }
+            });
+        }
+
+
     </script>
 </head>
+
 <body>
 <jsp:include page="navbar.jsp"/>
-<div id="chart_div"></div>
-<div id="chart2_div"></div>
-<div id="curve_chart"></div>
-<div id="myPieChart"></div>
+<div align="center">
+    <h1>Choose the graphic</h1>
+    <select id="selectBox" name ="courseName" onchange="changeGraphics();" style>
+        <c:forEach var="item" items="${listOfCourses}">
+           <option value=${item}>${item}</option>
+        </c:forEach>
+    </select>
+</div>
+<br></br>
+
+<div id="chart_test"></div>
+<div id="chart_python"></div>
+<div id="curve_test"></div>
+<div id="chart2_test"></div>
+
 </body>
 </html>

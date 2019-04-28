@@ -42,6 +42,7 @@ public class MainController {
         model.addAttribute("python_comments", entityService.getComments("Programming on Python"));
         model.addAttribute("python_modules", entityService.getModules("Programming on Python"));
 
+       model.addAttribute("listOfCourses",entityService.getCoursesNames());
         return "index";
     }
 
@@ -62,7 +63,7 @@ public class MainController {
         try {
             byte[] bytes = file.getBytes();
             //path to the dir "resources"
-            String pathName = "/Users/sergeyzyl/IdeaProjects/stepik/src/main/resources/";
+            String pathName = "resources";
             Path path = Paths.get(pathName + file.getOriginalFilename());
             Files.write(path, bytes);
 

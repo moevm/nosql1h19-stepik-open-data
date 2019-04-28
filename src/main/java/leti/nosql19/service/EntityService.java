@@ -23,4 +23,6 @@ public interface EntityService {
     List<Integer> getComments(String id);
 
     List<Integer> getAttempts(String id);
+
+    List<String> getCoursesNames();
 }

@@ -65,6 +65,16 @@ public class EntityServiceImpl implements EntityService {
     }
 
     @Override
+    public List<String> getCoursesNames() {
+        List<String> result = new ArrayList<>();
+
+        for (Course course: findAll()) {
+            result.add(course.getCourseName());
+        }
+        return result;
+    }
+
+    @Override
     public List<Integer> getComments(String id) {
         Course course = findById(id);
 
