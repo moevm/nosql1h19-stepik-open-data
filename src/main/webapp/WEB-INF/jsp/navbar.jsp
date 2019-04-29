@@ -9,7 +9,7 @@
                     <a class="nav-link" id="generalStatistics" href="/start"><span class="display-5">General statistics</span></a>
                 </li>
                 <li class="nav-item active" >
-                    <a class="nav-link" id="personalStatistics" href="/start"><span class="display-5">Personal statistics</span></a>
+                    <a class="nav-link" id="personalStatistics" href="/personal"><span class="display-5">Personal statistics</span></a>
                 </li>
                 <li class="nav-item active" >
                     <a class="nav-link" id="importFile" href="/importFile"><span class="display-5">Import/export</span></a>

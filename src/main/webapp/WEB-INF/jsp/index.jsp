@@ -13,6 +13,8 @@
         google.charts.setOnLoadCallback(drawChart2);
         google.charts.setOnLoadCallback(drawChart3);
         google.charts.setOnLoadCallback(drawChart4);
+        google.charts.setOnLoadCallback(drawChart5);
+        google.charts.setOnLoadCallback(drawChart6);
 
         function drawChart1() {
             var data = new google.visualization.DataTable();
@@ -222,6 +224,102 @@
             chart.draw(data, options);
         }
 
+        function drawChart5() {
+            // Define the chart to be drawn.
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Element');
+            data.addColumn('number', 'Percentage');
+
+            var modules = [
+                <c:forEach items="${literature_modules}" var="hero">
+                '<c:out value="${hero}" />',
+                </c:forEach>
+            ];
+
+            var attempts = [
+                <c:forEach items="${literature_attempts}" var="hero">
+                '<c:out value="${hero}" />',
+                </c:forEach>
+            ];
+
+            var sizeOfModules = modules.length
+            for (var i = 0; i < sizeOfModules; i++) {
+                data.addRows([
+                    [modules[i], parseInt(attempts[i])],
+                ]);
+            }
+
+            var options = {
+                title: 'Statistics of attempts in lessons for Literature',
+                annotations: {
+                    alwaysOutside: true,
+                    textStyle: {
+                        fontSize: 20,
+                        color: '#000',
+                        auraColor: 'none'
+                    }
+                },
+                hAxis: {
+                    title: 'Modules'
+                },
+                vAxis: {
+                    title: 'Attempts'
+                }
+            };
+
+            // Instantiate and draw the chart.
+            var chart = new google.visualization.LineChart(document.getElementById('chart1_literature'));
+            chart.draw(data, options);
+        }
+
+        function drawChart6() {
+            // Define the chart to be drawn.
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Element');
+            data.addColumn('number', 'Percentage');
+
+            var modules = [
+                <c:forEach items="${literature_modules}" var="hero">
+                '<c:out value="${hero}" />',
+                </c:forEach>
+            ];
+
+            var attempts = [
+                <c:forEach items="${literature_comments}" var="hero">
+                '<c:out value="${hero}" />',
+                </c:forEach>
+            ];
+
+            var sizeOfModules = modules.length
+            for (var i = 0; i < sizeOfModules; i++) {
+                data.addRows([
+                    [modules[i], parseInt(attempts[i])],
+                ]);
+            }
+
+            var options = {
+                title: 'Statistics of attempts in lessons for Literature',
+                annotations: {
+                    alwaysOutside: true,
+                    textStyle: {
+                        fontSize: 20,
+                        color: '#000',
+                        auraColor: 'none'
+                    }
+                },
+                hAxis: {
+                    title: 'Modules'
+                },
+                vAxis: {
+                    title: 'Comments'
+                }
+            };
+
+            // Instantiate and draw the chart.
+            var chart = new google.visualization.PieChart(document.getElementById('chart2_literature'));
+            chart.draw(data, options);
+        }
+
         function changeGraphics(){
             var selectBox = document.getElementById("selectBox");
             var selectedValue = selectBox.options[selectBox.selectedIndex].value;
@@ -233,12 +331,25 @@
                         $("#chart_test").show();
                         $("#curve_test").show();
                         $("#chart2_test").show();
+                        $("#chart1_literature").hide();
+                        $("#chart2_literature").hide();
+
                 }
                 if (selectedValue == "Programming"){
                         $("#chart_test").hide();
                         $("#chart2_test").hide();
                         $("#curve_test").hide();
                         $("#chart_python").show();
+                        $("#chart1_literature").hide();
+                        $("#chart2_literature").hide();
+                }
+                if (selectedValue == "Literature"){
+                    $("#chart_test").hide();
+                    $("#chart2_test").hide();
+                    $("#curve_test").hide();
+                    $("#chart_python").hide();
+                    $("#chart1_literature").show();
+                    $("#chart2_literature").show();
                 }
             });
         }
@@ -250,7 +361,8 @@
 <body>
 <jsp:include page="navbar.jsp"/>
 <div align="center">
-    <h1>Choose the graphic</h1>
+    <h1>General statistics</h1>
+    <h3>Choose the graphic</h3>
     <select id="selectBox" name ="courseName" onchange="changeGraphics();" style>
         <c:forEach var="item" items="${listOfCourses}">
            <option value=${item}>${item}</option>
@@ -263,6 +375,8 @@
 <div id="chart_python"></div>
 <div id="curve_test"></div>
 <div id="chart2_test"></div>
+<div id="chart1_literature"></div>
+<div id="chart2_literature"></div>
 
 </body>
 </html>

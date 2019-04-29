@@ -32,7 +32,7 @@ public class MainController {
     public String getStartPage(Model model){
 
         //add data
-   //     entityService.saveOrUpdate(DataUtil.getCourseFromJson("C:\\Users\\Admin\\Desktop\\3 kurs\\nosql\\nosql1h19-stepik-open-data\\src\\main\\resources\\testcourse_course.json"));
+        entityService.saveOrUpdate(DataUtil.getCourseFromJson("C:\\Users\\Admin\\Desktop\\3 kurs\\nosql\\nosql1h19-stepik-open-data\\src\\main\\resources\\literature_course.json"));
 
         model.addAttribute("Jattempts", entityService.getAttempts("TestCourse"));
         model.addAttribute("Jcomments", entityService.getComments("TestCourse"));
@@ -42,8 +42,34 @@ public class MainController {
         model.addAttribute("python_comments", entityService.getComments("Programming on Python"));
         model.addAttribute("python_modules", entityService.getModules("Programming on Python"));
 
+        model.addAttribute("literature_attempts", entityService.getAttempts("Literature"));
+        model.addAttribute("literature_comments", entityService.getComments("Literature"));
+        model.addAttribute("literature_modules",entityService.getModules("Literature"));
+
        model.addAttribute("listOfCourses",entityService.getCoursesNames());
         return "index";
+    }
+
+    @GetMapping("/personal")
+    public String getPersonalPage(Model model){
+        model.addAttribute("Test_mod_attempts",entityService.getUserModuleAttempts("Sergey Zyl","TestCourse"));
+        model.addAttribute("Test_step_attempts",entityService.getUserStepAttempts("Sergey Zyl","TestCourse"));
+        model.addAttribute("Test_mod_comments",entityService.getUserModuleComments("Sergey Zyl","TestCourse"));
+        model.addAttribute("Test_step_comments",entityService.getUserStepComments("Sergey Zyl","TestCourse"));
+
+        model.addAttribute("Python_step_comments",entityService.getUserStepComments("Sergey Zyl","Programming on Python"));
+        model.addAttribute("Python_mod_comments",entityService.getUserModuleComments("Sergey Zyl","Programming on Python"));
+        model.addAttribute("Python_step_attempts",entityService.getUserStepAttempts("Sergey Zyl","Programming on Python"));
+
+        model.addAttribute("literature_mod_attempts",entityService.getUserModuleAttempts("Sergey Zyl","Literature"));
+        model.addAttribute("literature_mod_comments",entityService.getUserModuleComments("Sergey Zyl","Literature"));
+
+        model.addAttribute("Python_mod_attempts",entityService.getUserModuleAttempts("Sergey Zyl","Programming on Python"));
+        model.addAttribute("Jmodules", entityService.getModules("TestCourse"));
+        model.addAttribute("literature_modules",entityService.getModules("Literature"));
+        model.addAttribute("python_modules", entityService.getModules("Programming on Python"));
+        model.addAttribute("listOfCourses",entityService.getCoursesNames());
+        return "personal";
     }
 
     @GetMapping("/importFile")
