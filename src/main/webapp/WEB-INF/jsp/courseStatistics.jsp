@@ -1,101 +1,101 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <jsp:include page="layout.jsp"/>
-    <title>Personal statistics</title>
+    <title>${courseName}</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
+    <script>
         google.charts.load('current', {packages: ['corechart', 'bar']});
         google.charts.setOnLoadCallback(drawChart1);
         google.charts.setOnLoadCallback(drawChart2);
         google.charts.setOnLoadCallback(drawChart3);
 
-        var attempts = [
-            <c:forEach items="${mod_attempts}" var="hero">
+
+        var comments = [
+            <c:forEach items="${comments}" var="hero">
             '<c:out value="${hero}" />',
             </c:forEach>
         ];
 
-        var comments = [
-            <c:forEach items="${mod_comments}" var="hero">
+        var attempts = [
+            <c:forEach items="${attempts}" var="hero">
             '<c:out value="${hero}" />',
             </c:forEach>
         ];
+
         var modules = [
             <c:forEach items="${modules}" var="hero">
             '<c:out value="${hero}" />',
             </c:forEach>
         ];
+        var size = comments.length;
 
         function drawChart1() {
             var data = new google.visualization.DataTable();
             data.addColumn('string', 'Module');
             data.addColumn('number', 'Comments');
             data.addColumn({type: 'string', role: 'annotation'});
+            data.addColumn('number', 'Attempts');
+            data.addColumn({type: 'string', role: 'annotation'});
+
+            for (var i = 0; i < size; i++) {
+                data.addRows([
+                    [modules[i], parseInt(comments[i]), comments[i], parseInt(attempts[i]), attempts[i]],
+                ]);
+            }
+
+            var options = {
+                title: 'Statistics for ${courseName} ',
+                annotations: {
+                    alwaysOutside: true,
+                    textStyle: {
+                        fontSize: 14,
+                        color: '#000',
+                        auraColor: 'none'
+                    }
+                },
+                hAxis: {
+                    title: 'Lessons'
+                },
+                vAxis: {
+                    title: 'Comments and attempts'
+                }
+            };
+
+            var chart = new google.visualization.ColumnChart(document.getElementById('chart1'));
+            chart.draw(data, options);
+        }
+
+        function drawChart2() {
+
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Module');
+            data.addColumn('number', 'Comments');
+            data.addColumn({type: 'string', role: 'annotation'});
+
             var options = {
                 title: 'Statistics of comments in lessons for ${courseName}',
                 curveType: 'function',
                 legend: {position: 'bottom'},
                 hAxis: {
                     title: 'Lessons',
-                },
-                vAxis: {
-                    title: 'Attempts'
-                },
-            };
-            var size = modules.length
-            for (var i = 0; i < size; i++) {
-                data.addRows([
-                    [modules[i], parseInt(comments[i]), comments[i]]
-                ]);
-            }
-            var chart = new google.visualization.LineChart(document.getElementById('chart1'));
-            chart.draw(data, options);
-        }
 
-        function drawChart2() {
-            // Define the chart to be drawn.
-            var data = new google.visualization.DataTable();
-            data.addColumn('string', 'Element');
-            data.addColumn('number', 'Percentage');
-            var modules = [
-                <c:forEach items="${modules}" var="hero">
-                '<c:out value="${hero}" />',
-                </c:forEach>
-            ];
-            var attempts = [
-                <c:forEach items="${mod_attempts}" var="hero">
-                '<c:out value="${hero}" />',
-                </c:forEach>
-            ];
-            var sizeOfModules = modules.length
-            for (var i = 0; i < sizeOfModules; i++) {
-                data.addRows([
-                    [modules[i], parseInt(attempts[i])],
-                ]);
-            }
-            var options = {
-                title: 'Statistics of attempts in lessons for ${courseName}',
-                annotations: {
-                    alwaysOutside: true,
-                    textStyle: {
-                        fontSize: 20,
-                        color: '#000',
-                        auraColor: 'none'
-                    }
-                },
-                hAxis: {
-                    title: 'Modules'
                 },
                 vAxis: {
-                    title: 'Attempts'
+                    title: 'Comments'
                 }
             };
-            // Instantiate and draw the chart.
+            for (var i = 0; i < size; i++) {
+                data.addRows([
+                    [modules[i], parseInt(comments[i]), comments[i]],
+                ]);
+            }
+
             var chart = new google.visualization.LineChart(document.getElementById('chart2'));
+
             chart.draw(data, options);
         }
 
@@ -104,22 +104,13 @@
             var data = new google.visualization.DataTable();
             data.addColumn('string', 'Element');
             data.addColumn('number', 'Percentage');
-            var modules = [
-                <c:forEach items="${modules}" var="hero">
-                '<c:out value="${hero}" />',
-                </c:forEach>
-            ];
-            var attempts = [
-                <c:forEach items="${mod_comments}" var="hero">
-                '<c:out value="${hero}" />',
-                </c:forEach>
-            ];
-            var sizeOfModules = modules.length
-            for (var i = 0; i < sizeOfModules; i++) {
+
+            for (var i = 0; i < size; i++) {
                 data.addRows([
                     [modules[i], parseInt(attempts[i])],
                 ]);
             }
+
             var options = {
                 title: 'Statistics of attempts in lessons for ${courseName}',
                 annotations: {
@@ -134,14 +125,15 @@
                     title: 'Modules'
                 },
                 vAxis: {
-                    title: 'Comments'
-                }
+                    title: 'Attempts'
+                },
+                height: 600
             };
+
             // Instantiate and draw the chart.
             var chart = new google.visualization.PieChart(document.getElementById('chart3'));
             chart.draw(data, options);
         }
-
 
         function getStatistics() {
             var selectBox = document.getElementById("selectBox");
@@ -155,10 +147,8 @@
             var selectedValue = selectBox.options[selectBox.selectedIndex].value;
             window.location = "/personalStatistics" + "?userName=" + selectedValue + "&courseName=${courseName}";
         }
-
     </script>
 </head>
-
 <body>
 <jsp:include page="navbar.jsp"/>
 <div align="center">
@@ -183,11 +173,8 @@
         <button onclick="getUserStatistics()">View</button>
     </div>
 </div>
-<br></br>
-
 <div id="chart1"></div>
 <div id="chart2"></div>
 <div id="chart3"></div>
-
 </body>
 </html>

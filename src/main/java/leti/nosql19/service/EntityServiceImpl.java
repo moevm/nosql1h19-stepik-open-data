@@ -21,7 +21,7 @@ public class EntityServiceImpl implements EntityService {
 
     @Override
     public Course findById(String id) {
-        return entityRepository.findByCourseName(id);
+        return entityRepository.findByCourseNameStartingWith(id);
     }
 
     @Override
@@ -52,11 +52,11 @@ public class EntityServiceImpl implements EntityService {
 
     @Override
     public List<String> getModules(String id) {
-      Course course = findById(id);
+        Course course = findById(id);
 
-      List<String> result = new ArrayList<>();
+        List<String> result = new ArrayList<>();
 
-        for (Module model: course.getListOf().getModules()) {
+        for (Module model : course.getListOf().getModules()) {
             result.add(model.getModule());
         }
 
@@ -67,8 +67,20 @@ public class EntityServiceImpl implements EntityService {
     public List<String> getCoursesNames() {
         List<String> result = new ArrayList<>();
 
-        for (Course course: findAll()) {
+        for (Course course : findAll()) {
             result.add(course.getCourseName());
+        }
+        return result;
+    }
+
+    @Override
+    public List<String> getUsersName(String courseName) {
+        Course course = findById(courseName);
+
+        List<String> result = new ArrayList<>();
+
+        for (User user : course.getListOf().getUsers()) {
+            result.add(user.getUser());
         }
         return result;
     }
@@ -79,7 +91,7 @@ public class EntityServiceImpl implements EntityService {
 
         List<Integer> result = new ArrayList<>();
 
-        for (Module model: course.getListOf().getModules()) {
+        for (Module model : course.getListOf().getModules()) {
             result.add(model.getComments());
         }
 
@@ -92,7 +104,7 @@ public class EntityServiceImpl implements EntityService {
 
         List<Integer> result = new ArrayList<>();
 
-        for (Module model: course.getListOf().getModules()) {
+        for (Module model : course.getListOf().getModules()) {
             result.add(model.getAttempts());
         }
 
@@ -107,7 +119,7 @@ public class EntityServiceImpl implements EntityService {
         User user = null;
 
         for (User user1 : course.getListOf().getUsers()) {
-            if(user1.getUser().equals(userName))
+            if (user1.getUser().startsWith(userName))
                 user = user1;
         }
 
@@ -117,7 +129,7 @@ public class EntityServiceImpl implements EntityService {
     @Override
     public List<Integer> getUserModuleAttempts(String userName, String courseName) {
         User user = getUserByName(userName, courseName);
-        if(user == null)
+        if (user == null)
             return null;
         List<Integer> result = new ArrayList<>();
 
@@ -131,7 +143,7 @@ public class EntityServiceImpl implements EntityService {
     @Override
     public List<Integer> getUserModuleComments(String userName, String courseName) {
         User user = getUserByName(userName, courseName);
-        if(user == null)
+        if (user == null)
             return null;
         List<Integer> result = new ArrayList<>();
 
@@ -145,7 +157,7 @@ public class EntityServiceImpl implements EntityService {
     @Override
     public List<Integer> getUserStepAttempts(String userName, String courseName) {
         User user = getUserByName(userName, courseName);
-        if(user == null)
+        if (user == null)
             return null;
         List<Integer> result = new ArrayList<>();
 
@@ -159,7 +171,7 @@ public class EntityServiceImpl implements EntityService {
     @Override
     public List<Integer> getUserStepComments(String userName, String courseName) {
         User user = getUserByName(userName, courseName);
-        if(user == null)
+        if (user == null)
             return null;
         List<Integer> result = new ArrayList<>();
 

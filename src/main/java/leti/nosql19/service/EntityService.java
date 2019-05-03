@@ -27,6 +27,8 @@ public interface EntityService {
 
     List<String> getCoursesNames();
 
+    List<String> getUsersName(String courseName);
+
     User getUserByName(String userName, String courseName);
 
     List<Integer> getUserModuleAttempts(String userName, String courseName);

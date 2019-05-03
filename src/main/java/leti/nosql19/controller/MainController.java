@@ -4,9 +4,11 @@ import com.google.gson.Gson;
 import leti.nosql19.service.EntityService;
 import leti.nosql19.utils.DataUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Required;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
@@ -29,51 +31,20 @@ public class MainController {
     }
 
     @GetMapping("/start")
-    public String getStartPage(Model model){
+    public String getStartPage(Model model) {
 
         //add data
-        entityService.saveOrUpdate(DataUtil.getCourseFromJson("C:\\Users\\Admin\\Desktop\\3 kurs\\nosql\\nosql1h19-stepik-open-data\\src\\main\\resources\\literature_course.json"));
-
-        model.addAttribute("Jattempts", entityService.getAttempts("TestCourse"));
-        model.addAttribute("Jcomments", entityService.getComments("TestCourse"));
-        model.addAttribute("Jmodules", entityService.getModules("TestCourse"));
-
-        model.addAttribute("python_attempts", entityService.getAttempts("Programming on Python"));
-        model.addAttribute("python_comments", entityService.getComments("Programming on Python"));
-        model.addAttribute("python_modules", entityService.getModules("Programming on Python"));
-
-        model.addAttribute("literature_attempts", entityService.getAttempts("Literature"));
-        model.addAttribute("literature_comments", entityService.getComments("Literature"));
-        model.addAttribute("literature_modules",entityService.getModules("Literature"));
-
-       model.addAttribute("listOfCourses",entityService.getCoursesNames());
+        //       entityService.saveOrUpdate(DataUtil.getCourseFromJson("/Users/sergeyzyl/IdeaProjects/stepik/src/main/resources/literature_course.json"));
+        model.addAttribute("userName", "Sergey");
+        model.addAttribute("courseName", "Programming");
+        model.addAttribute("listOfCourses", entityService.getCoursesNames());
         return "index";
     }
 
-    @GetMapping("/personal")
-    public String getPersonalPage(Model model){
-        model.addAttribute("Test_mod_attempts",entityService.getUserModuleAttempts("Sergey Zyl","TestCourse"));
-        model.addAttribute("Test_step_attempts",entityService.getUserStepAttempts("Sergey Zyl","TestCourse"));
-        model.addAttribute("Test_mod_comments",entityService.getUserModuleComments("Sergey Zyl","TestCourse"));
-        model.addAttribute("Test_step_comments",entityService.getUserStepComments("Sergey Zyl","TestCourse"));
-
-        model.addAttribute("Python_step_comments",entityService.getUserStepComments("Sergey Zyl","Programming on Python"));
-        model.addAttribute("Python_mod_comments",entityService.getUserModuleComments("Sergey Zyl","Programming on Python"));
-        model.addAttribute("Python_step_attempts",entityService.getUserStepAttempts("Sergey Zyl","Programming on Python"));
-
-        model.addAttribute("literature_mod_attempts",entityService.getUserModuleAttempts("Sergey Zyl","Literature"));
-        model.addAttribute("literature_mod_comments",entityService.getUserModuleComments("Sergey Zyl","Literature"));
-
-        model.addAttribute("Python_mod_attempts",entityService.getUserModuleAttempts("Sergey Zyl","Programming on Python"));
-        model.addAttribute("Jmodules", entityService.getModules("TestCourse"));
-        model.addAttribute("literature_modules",entityService.getModules("Literature"));
-        model.addAttribute("python_modules", entityService.getModules("Programming on Python"));
-        model.addAttribute("listOfCourses",entityService.getCoursesNames());
-        return "personal";
-    }
-
     @GetMapping("/importFile")
-    public String getUploadPage(Model model){
+    public String getUploadPage(Model model) {
+        model.addAttribute("userName", "Sergey");
+        model.addAttribute("courseName", "Programming");
         return "importFile";
     }
 
@@ -103,8 +74,48 @@ public class MainController {
         return "redirect:/uploadStatus";
     }
 
+    @GetMapping("/statistics")
+    public String getCourseStat(Model model, @RequestParam String courseName) {
+        model.addAttribute("courseName", courseName);
+        model.addAttribute("userName", "Sergey");
+
+        model.addAttribute("attempts", entityService.getAttempts(courseName));
+        model.addAttribute("comments", entityService.getComments(courseName));
+        model.addAttribute("modules", entityService.getModules(courseName));
+
+        model.addAttribute("listOfCourses", entityService.getCoursesNames());
+        model.addAttribute("listOfUsers", entityService.getUsersName(courseName));
+        return "courseStatistics";
+    }
+
+    @GetMapping("/personalStatistics")
+    public String getPersonalStat(Model model, @RequestParam(required = false) String userName, @RequestParam(required = false) String courseName) {
+        model.addAttribute("userName", userName);
+        model.addAttribute("courseName", courseName);
+
+        model.addAttribute("step_comments", entityService.getUserStepComments(userName, courseName));
+        model.addAttribute("step_attempts", entityService.getUserStepAttempts(userName, courseName));
+        model.addAttribute("mod_comments", entityService.getUserModuleComments(userName, courseName));
+        model.addAttribute("mod_attempts", entityService.getUserModuleAttempts(userName, courseName));
+
+
+        model.addAttribute("modules", entityService.getModules(courseName));
+
+        model.addAttribute("listOfCourses", entityService.getCoursesNames());
+        model.addAttribute("listOfUsers", entityService.getUsersName(courseName));
+
+        return "personal";
+    }
+
     @GetMapping("/uploadStatus")
-    public String uploadStatus() {
+    public String uploadStatus(Model model) {
+        model.addAttribute("userName", "Sergey");
+        model.addAttribute("courseName", "Programming");
         return "uploadStatus";
+    }
+
+    @PostMapping("/courseProcess")
+    public void loadCourseStat(Model model) {
+
     }
 }
