@@ -5,6 +5,7 @@
 <head>
     <jsp:include page="layout.jsp"/>
     <title>Personal statistics</title>
+    <link href="<c:url value='../../resources/css/personal.css' />" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
@@ -61,17 +62,7 @@
             var data = new google.visualization.DataTable();
             data.addColumn('string', 'Element');
             data.addColumn('number', 'Percentage');
-            var modules = [
-                <c:forEach items="${modules}" var="hero">
-                '<c:out value="${hero}" />',
-                </c:forEach>
-            ];
-            var attempts = [
-                <c:forEach items="${mod_attempts}" var="hero">
-                '<c:out value="${hero}" />',
-                </c:forEach>
-            ];
-            var sizeOfModules = modules.length
+            var sizeOfModules = modules.length;
             for (var i = 0; i < sizeOfModules; i++) {
                 data.addRows([
                     [modules[i], parseInt(attempts[i])],
@@ -104,17 +95,7 @@
             var data = new google.visualization.DataTable();
             data.addColumn('string', 'Element');
             data.addColumn('number', 'Percentage');
-            var modules = [
-                <c:forEach items="${modules}" var="hero">
-                '<c:out value="${hero}" />',
-                </c:forEach>
-            ];
-            var attempts = [
-                <c:forEach items="${mod_comments}" var="hero">
-                '<c:out value="${hero}" />',
-                </c:forEach>
-            ];
-            var sizeOfModules = modules.length
+            var sizeOfModules = modules.length;
             for (var i = 0; i < sizeOfModules; i++) {
                 data.addRows([
                     [modules[i], parseInt(attempts[i])],
@@ -162,7 +143,7 @@
 <body>
 <jsp:include page="navbar.jsp"/>
 <div align="center">
-    <div align="center" style="position: relative; display: inline-block;">
+    <div align="center" class="choose">
         <h3>Choose the course</h3>
         <select id="selectBox" name="dropdown">
             <c:forEach var="item" items="${listOfCourses}">
@@ -172,8 +153,7 @@
         <button onclick="getStatistics()">View</button>
     </div>
 
-
-    <div align="center" style="position: relative; display: inline-block;">
+    <div align="center" class="choose">
         <h3>Choose User</h3>
         <select id="selectBox2" name="dropdown2">
             <c:forEach var="item" items="${listOfUsers}">
@@ -183,7 +163,7 @@
         <button onclick="getUserStatistics()">View</button>
     </div>
 </div>
-<br></br>
+
 
 <div id="chart1"></div>
 <div id="chart2"></div>

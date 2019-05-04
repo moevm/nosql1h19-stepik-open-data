@@ -5,6 +5,7 @@
 <head>
     <jsp:include page="layout.jsp"/>
     <title>${courseName}</title>
+    <link href="<c:url value='../../resources/css/courseStatistics.css' />" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script>
@@ -152,8 +153,8 @@
 <body>
 <jsp:include page="navbar.jsp"/>
 <div align="center">
-    <div align="center" style="position: relative; display: inline-block;">
-        <h3>Choose the course</h3>
+    <div align="center" id="courseWrapper" class="choose">
+        <h3>Select course</h3>
         <select id="selectBox" name="dropdown">
             <c:forEach var="item" items="${listOfCourses}">
                 <option value=${item}>${item}</option>
@@ -163,8 +164,8 @@
     </div>
 
 
-    <div align="center" style="position: relative; display: inline-block;">
-        <h3>Choose User</h3>
+    <div align="center" id="userWrapper" class="choose">
+        <h3>Select user</h3>
         <select id="selectBox2" name="dropdown2">
             <c:forEach var="item" items="${listOfUsers}">
                 <option value=${item}>${item}</option>

@@ -1,23 +1,27 @@
 package leti.nosql19.controller;
 
-import com.google.gson.Gson;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import leti.nosql19.model.Course;
 import leti.nosql19.service.EntityService;
-import leti.nosql19.utils.DataUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Required;
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Controller
@@ -45,6 +49,10 @@ public class MainController {
     public String getUploadPage(Model model) {
         model.addAttribute("userName", "Sergey");
         model.addAttribute("courseName", "Programming");
+
+        List<String> courses = entityService.getCoursesNames();
+        courses.add("All");
+        model.addAttribute("listOfCourses", courses);
         return "importFile";
     }
 
@@ -73,6 +81,31 @@ public class MainController {
 
         return "redirect:/uploadStatus";
     }
+
+    @GetMapping(value = "/download", produces = "application/json")
+    public ResponseEntity<InputStreamResource> download(@RequestParam String courseName)
+            throws IOException {
+
+        List<Course> courses = new ArrayList<>();
+
+        if (courseName.equals("All")) {
+            courses = entityService.findAll();
+        }
+
+        ObjectMapper mapper = new ObjectMapper();
+        byte[] buf = mapper.writeValueAsBytes(courses.size() > 1 ? courses : entityService.findById(courseName));
+
+        String filename = courseName.toLowerCase() + ".json";
+
+        return ResponseEntity
+                .ok()
+                .contentLength(buf.length)
+                .contentType(
+                        MediaType.parseMediaType("application/octet-stream"))
+                .header("Content-Disposition", "attachment; filename=" + filename)
+                .body(new InputStreamResource(new ByteArrayInputStream(buf)));
+    }
+
 
     @GetMapping("/statistics")
     public String getCourseStat(Model model, @RequestParam String courseName) {

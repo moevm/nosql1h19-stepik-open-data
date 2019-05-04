@@ -5,29 +5,24 @@
 <head>
     <jsp:include page="layout.jsp"/>
     <title>Statistics</title>
+    <link href="<c:url value='../../resources/css/index.css' />" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-        function getStatistics() {
-            var selectBox = document.getElementById("selectBox");
-            var selectedValue = selectBox.options[selectBox.selectedIndex].value;
-            window.location = "/statistics" + "?courseName=" + selectedValue;
-        }
-
-    </script>
+    <script src=../../resources/js/index.js type="text/javascript"></script>
 </head>
 
 <body>
 <jsp:include page="navbar.jsp"/>
 <div align="center">
-    <h1>General statistics</h1>
-    <h3>Choose the graphic</h3>
-    <select id="selectBox" name="dropdown" onchange="changeGraphics();">
+    <div class="mainWrapper">
+    <h3>Select course</h3>
+    <select id="selectBox" name="dropdown">
         <c:forEach var="item" items="${listOfCourses}">
             <option value=${item}>${item}</option>
         </c:forEach>
     </select>
     <button onclick="getStatistics()">View</button>
+    </div>
 </div>
 
 </body>
