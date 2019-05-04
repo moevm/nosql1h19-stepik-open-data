@@ -1,0 +1,396 @@
+{
+  "courseName": "Math",
+  "countOf": {
+    "users": {
+      "all": "4",
+      "graduated": "3",
+      "graduatedWithHonours": "1"
+    },
+    "modules": "6",
+    "steps": "23",
+    "comments": "37"
+  },
+  "listOf": {
+    "modules": [
+      {
+        "module": "Algebra",
+        "attempts": "13",
+        "passing": "3",
+        "comments": "6",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "4",
+            "passing": "4",
+            "comments": "1"
+          },
+          {
+            "step": "2",
+            "attempts": "8",
+            "passing": "4",
+            "comments": "1"
+          },
+          {
+            "step": "3",
+            "attempts": "9",
+            "passing": "3",
+            "comments": "4"
+          },
+          {
+            "step": "4",
+            "attempts": "4",
+            "passing": "4",
+            "comments": "0"
+          }
+        ]
+      },
+      {
+        "module": "Physics",
+        "attempts": "22",
+        "passing": "3",
+        "comments": "9",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "4",
+            "passing": "4",
+            "comments": "1"
+          },
+          {
+            "step": "2",
+            "attempts": "7",
+            "passing": "4",
+            "comments": "2"
+          },
+          {
+            "step": "3",
+            "attempts": "9",
+            "passing": "3",
+            "comments": "4"
+          },
+          {
+            "step": "4",
+            "attempts": "6",
+            "passing": "4",
+            "comments": "2"
+          }
+        ]
+      },
+      {
+        "module": "Literature",
+        "attempts": "13",
+        "passing": "4",
+        "comments": "2",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "4",
+            "passing": "4",
+            "comments": "1"
+          },
+          {
+            "step": "2",
+            "attempts": "5",
+            "passing": "4",
+            "comments": "1"
+          },
+          {
+            "step": "3",
+            "attempts": "5",
+            "passing": "4",
+            "comments": "0"
+          }
+        ]
+      },
+      {
+        "module": "Russian",
+        "attempts": "21",
+        "passing": "3",
+        "comments": "5",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "4",
+            "passing": "4",
+            "comments": "0"
+          },
+          {
+            "step": "2",
+            "attempts": "4",
+            "passing": "4",
+            "comments": "2"
+          },
+          {
+            "step": "3",
+            "attempts": "5",
+            "passing": "3",
+            "comments": "2"
+          },
+          {
+            "step": "4",
+            "attempts": "4",
+            "passing": "4",
+            "comments": "0"
+          },
+          {
+            "step": "5",
+            "attempts": "5",
+            "passing": "4",
+            "comments": "1"
+          }
+        ]
+      },
+      {
+        "module": "English",
+        "attempts": "17",
+        "passing": "3",
+        "comments": "5",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "4",
+            "passing": "4",
+            "comments": "1"
+          },
+          {
+            "step": "2",
+            "attempts": "9",
+            "passing": "3",
+            "comments": "3"
+          },
+          {
+            "step": "3",
+            "attempts": "5",
+            "passing": "4",
+            "comments": "1"
+          }
+        ]
+      },
+      {
+        "module": "PC",
+        "attempts": "24",
+        "passing": "3",
+        "comments": "10",
+        "steps": [
+          {
+            "step": "1",
+            "attempts": "4",
+            "passing": "4",
+            "comments": "0"
+          },
+          {
+            "step": "2",
+            "attempts": "5",
+            "passing": "4",
+            "comments": "2"
+          },
+          {
+            "step": "3",
+            "attempts": "8",
+            "passing": "3",
+            "comments": "4"
+          },
+          {
+            "step": "4",
+            "attempts": "10",
+            "passing": "4",
+            "comments": "4"
+          }
+        ]
+      }
+    ],
+    "users": [
+      {
+        "user": "Sergey Zyl",
+        "progressBy": {
+          "course": {
+            "attempts": "52",
+            "comments": "37",
+            "percent": "62.6",
+            "stepsPassingCount": "18",
+            "successPassing": "false"
+          },
+          "modules": [
+            {
+              "module": "Algebra",
+              "attempts": "12",
+              "comments": "6",
+              "successPassing": "false"
+            },
+            {
+              "module": "Physics",
+              "attempts": "13",
+              "comments": "9",
+              "successPassing": "false"
+            },
+            {
+              "module": "Literature",
+              "attempts": "3",
+              "comments": "2",
+              "successPassing": "true"
+            },
+            {
+              "module": "Russian",
+              "attempts": "6",
+              "comments": "5",
+              "successPassing": "false"
+            },
+            {
+              "module": "English",
+              "attempts": "7",
+              "comments": "5",
+              "successPassing": "false"
+            },
+            {
+              "module": "PC",
+              "attempts": "11",
+              "comments": "10",
+              "successPassing": "false"
+            }
+          ],
+
+          "steps": [
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "1",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "5",
+              "comments": "1",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "6",
+              "comments": "4",
+              "successPassing": "false"
+            },
+            {
+              "step": "4",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "1",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "4",
+              "comments": "2",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "6",
+              "comments": "4",
+              "successPassing": "false"
+            },
+			{
+              "step": "4",
+              "attempts": "3",
+              "comments": "2",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "1",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "2",
+              "comments": "1",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+			{
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "1",
+              "comments": "2",
+              "successPassing": "true"
+            },
+            {
+              "step": "3",
+              "attempts": "2",
+              "comments": "2",
+              "successPassing": "false"
+            },
+            {
+              "step": "4",
+              "attempts": "1",
+              "comments": "0",
+              "successPassing": "true"
+            },
+			{
+              "step": "5",
+              "attempts": "2",
+              "comments": "1",
+              "successPassing": "true"
+            },
+            {
+              "step": "1",
+              "attempts": "0",
+              "comments": "1",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "6",
+              "comments": "3",
+              "successPassing": "false"
+            },
+			{
+              "step": "3",
+              "attempts": "1",
+              "comments": "1",
+              "successPassing": "true"
+            },
+			{
+              "step": "1",
+              "attempts": "0",
+              "comments": "0",
+              "successPassing": "true"
+            },
+            {
+              "step": "2",
+              "attempts": "1",
+              "comments": "2",
+              "successPassing": "true"
+            },
+			{
+              "step": "3",
+              "attempts": "4",
+              "comments": "4",
+              "successPassing": "false"
+            },
+			{
+              "step": "4",
+              "attempts": "6",
+              "comments": "4",
+              "successPassing": "true"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -3,6 +3,7 @@ package leti.nosql19.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import leti.nosql19.model.Course;
 import leti.nosql19.service.EntityService;
+import leti.nosql19.utils.DataUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.MediaType;
@@ -68,9 +69,12 @@ public class MainController {
         try {
             byte[] bytes = file.getBytes();
             //path to the dir "resources"
-            String pathName = "resources";
-            Path path = Paths.get(pathName + file.getOriginalFilename());
+            String pathName = "src/main/resources/" + file.getOriginalFilename();
+            Path path = Paths.get(pathName);
             Files.write(path, bytes);
+
+            //Jools, it,s for saving data to mongo
+            entityService.saveOrUpdate(DataUtil.getCourseFromJson(pathName));
 
             redirectAttributes.addFlashAttribute("message",
                     "You successfully uploaded '" + file.getOriginalFilename() + "'");
@@ -141,14 +145,9 @@ public class MainController {
     }
 
     @GetMapping("/uploadStatus")
-    public String uploadStatus(Model model) {
+    public String uploadStatus(Model model, @RequestParam String course) {
         model.addAttribute("userName", "Sergey");
         model.addAttribute("courseName", "Programming");
         return "uploadStatus";
-    }
-
-    @PostMapping("/courseProcess")
-    public void loadCourseStat(Model model) {
-
     }
 }
