@@ -39,18 +39,14 @@ public class MainController {
     public String getStartPage(Model model) {
 
         //add data
-        //       entityService.saveOrUpdate(DataUtil.getCourseFromJson("/Users/sergeyzyl/IdeaProjects/stepik/src/main/resources/literature_course.json"));
-        model.addAttribute("userName", "Sergey");
-        model.addAttribute("courseName", "Programming");
+        //entityService.saveOrUpdate(DataUtil.getCourseFromJson("literature_course.json"));
+
         model.addAttribute("listOfCourses", entityService.getCoursesNames());
         return "index";
     }
 
     @GetMapping("/importFile")
     public String getUploadPage(Model model) {
-        model.addAttribute("userName", "Sergey");
-        model.addAttribute("courseName", "Programming");
-
         List<String> courses = entityService.getCoursesNames();
         courses.add("All");
         model.addAttribute("listOfCourses", courses);
@@ -73,7 +69,7 @@ public class MainController {
             Path path = Paths.get(pathName);
             Files.write(path, bytes);
 
-            //Jools, it,s for saving data to mongo
+            //save data to mongo
             entityService.saveOrUpdate(DataUtil.getCourseFromJson(pathName));
 
             redirectAttributes.addFlashAttribute("message",
@@ -114,7 +110,6 @@ public class MainController {
     @GetMapping("/statistics")
     public String getCourseStat(Model model, @RequestParam String courseName) {
         model.addAttribute("courseName", courseName);
-        model.addAttribute("userName", "Sergey");
 
         model.addAttribute("attempts", entityService.getAttempts(courseName));
         model.addAttribute("comments", entityService.getComments(courseName));
@@ -145,9 +140,7 @@ public class MainController {
     }
 
     @GetMapping("/uploadStatus")
-    public String uploadStatus(Model model, @RequestParam String course) {
-        model.addAttribute("userName", "Sergey");
-        model.addAttribute("courseName", "Programming");
+    public String uploadStatus(Model model) {
         return "uploadStatus";
     }
 }
